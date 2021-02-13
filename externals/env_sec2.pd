@@ -1,0 +1,77 @@
+#N canvas 1080 217 871 741 12;
+#X obj 270 204 vsl 20 150 0 10 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 10300 1;
+#X obj 295 204 vsl 20 150 0.1 1000 1 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 14000 1;
+#X obj 267 403 *;
+#X obj 252 342 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 232 368 t b f;
+#X obj 268 439 pack f f;
+#X obj 252 202 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 86 348 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 113 435 route 1 0;
+#X obj 110 400 list prepend 1;
+#X obj 521 515 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 65 286 inlet;
+#X obj 167 565 outlet;
+#X obj 521 546 outlet;
+#X obj 543 480 delay 0 0 sec;
+#X obj 188 511 list store 0 0;
+#X obj 331 401 t b f;
+#X obj 413 342 pack f f f f;
+#X obj 413 314 f;
+#X obj 237 140 unpack f f f f;
+#X msg 540 419 stop;
+#X obj 123 372 t b b;
+#X obj 375 81 inlet;
+#X obj 354 571 outlet;
+#X obj 373 148 route load save;
+#X obj 451 215 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 371 121 list trim;
+#X obj 252 219 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 2 0;
+#X connect 0 0 17 2;
+#X connect 1 0 14 1;
+#X connect 1 0 16 0;
+#X connect 1 0 17 3;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 3 0 17 1;
+#X connect 4 0 2 0;
+#X connect 4 1 2 1;
+#X connect 5 0 15 1;
+#X connect 6 0 9 1;
+#X connect 6 0 18 1;
+#X connect 7 0 21 0;
+#X connect 8 0 14 0;
+#X connect 8 0 15 0;
+#X connect 8 0 27 0;
+#X connect 8 1 10 0;
+#X connect 9 0 8 0;
+#X connect 10 0 13 0;
+#X connect 11 0 7 0;
+#X connect 14 0 10 0;
+#X connect 15 0 12 0;
+#X connect 16 0 5 0;
+#X connect 16 1 5 1;
+#X connect 17 0 23 0;
+#X connect 18 0 17 0;
+#X connect 19 0 6 0;
+#X connect 19 1 3 0;
+#X connect 19 2 0 0;
+#X connect 19 3 1 0;
+#X connect 20 0 14 0;
+#X connect 21 0 9 0;
+#X connect 21 1 20 0;
+#X connect 22 0 26 0;
+#X connect 24 0 19 0;
+#X connect 24 1 25 0;
+#X connect 25 0 18 0;
+#X connect 26 0 24 0;
+#X coords 0 -1 1 1 67 159 2 250 200;
