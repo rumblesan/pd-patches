@@ -1,0 +1,3 @@
+[submodule "rjlib"]
+	path = rjlib
+	url = https://github.com/rumblesan/rjlib.git
