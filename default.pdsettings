@@ -1,0 +1,28 @@
+audioapi: 4
+noaudioin: False
+audioindev1: 0 2
+audioindevname1: Built-in Microphone
+noaudioout: False
+audiooutdev1: 2 2
+audiooutdevname1: Scarlett 6i6 USB
+audiobuf: 5
+rate: 44100
+callback: 0
+blocksize: 64
+midiapi: 0
+nomidiin: True
+nomidiout: False
+midioutdev1: 2
+midioutdevname1: mioXM Monomachine
+path1: /Users/guy/src/pd-patches/abstractions
+path2: /Users/guy/src/pd-patches/rjlib/rj
+path3: /Users/guy/src/pd-patches/rjlib/pd
+path4: /Users/guy/src/pd-patches/externals
+npath: 4
+standardpath: 0
+verbose: 0
+nloadlib: 0
+defeatrt: 0
+flags: 
+zoom: 1
+loading: no
