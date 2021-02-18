@@ -1,0 +1,11 @@
+#N canvas 591 429 1115 773 12;
+#X obj 161 207 simple-fm-synth;
+#A saved 10.9748 145.524 76.6142 87.8825 0 0 28.2541 187.262 32.1811
+93.6012 5.5 0 0;
+#X obj 226 541 simple-volume;
+#X obj 226 666 dac~;
+#X msg 149 103 60 100 200;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 2 1;
+#X connect 3 0 0 0;

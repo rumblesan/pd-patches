@@ -8,7 +8,7 @@
 #X obj 187 347 +~;
 #X obj 224 424 c_cpfade;
 #X obj 105 121 hsl 71 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 800 1;
+-1 -1 2600 1;
 #X obj 224 461 outlet~;
 #X obj 54 35 inlet;
 #X obj 158 43 inlet;
