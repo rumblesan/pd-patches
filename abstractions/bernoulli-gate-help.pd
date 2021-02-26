@@ -1,0 +1,21 @@
+#N canvas 1318 327 689 519 12;
+#X obj 192 348 bernoulli-gate;
+#X text 27 17 Bernoulli Gate;
+#X text 27 63 A bang message sent into the left inlent will be randomly
+sent out one of the bottom outlets \, with the slider position controlling
+the probability of which one. With the slider all the way to the left
+\, every bang will come out the left outlet. All the way to the right
+will pass everything to the right outlet \, and exactly in the middle
+gives a 50/50 chance of each. The right inlet can be used to externally
+set the probability and expects a range from 0 to 1;
+#X obj 192 278 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 192 307 metro 500;
+#X obj 192 431 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 245 431 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 5 0;
+#X connect 0 1 6 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
