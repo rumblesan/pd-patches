@@ -1,0 +1,16 @@
+#N canvas 1281 437 821 696 12;
+#X obj 384 100 inlet~;
+#X obj 387 173 tabwrite~ \$0-array;
+#X obj 460 111 metro 50;
+#X obj 458 71 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array \$0-array 2000 float 2;
+#X coords 0 1 2000 -1 200 140 1;
+#X restore 101 101 graph;
+#X obj 461 29 loadbang;
+#X connect 0 0 1 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 5 0 3 0;
+#X coords 0 -1 1 1 202 145 1 100 100;
