@@ -8,7 +8,7 @@
 #X obj 187 347 +~;
 #X obj 224 424 c_cpfade;
 #X obj 105 121 hsl 71 25 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 2600 1;
+-1 -1 0 1;
 #X obj 224 461 outlet~;
 #X obj 54 35 inlet;
 #X obj 158 43 inlet;
@@ -22,13 +22,14 @@
 #X obj 409 245 s \$0-load-state;
 #X obj 299 29 r \$0-load-state;
 #X obj 298 65 unpack f f f;
+#X obj 187 178 t b f;
 #X connect 0 0 6 0;
 #X connect 1 0 6 1;
 #X connect 2 0 0 0;
 #X connect 2 0 4 0;
 #X connect 2 0 18 1;
-#X connect 3 0 4 1;
 #X connect 3 0 17 1;
+#X connect 3 0 22 0;
 #X connect 4 0 1 0;
 #X connect 5 0 15 0;
 #X connect 6 0 13 0;
@@ -49,4 +50,6 @@
 #X connect 21 0 2 0;
 #X connect 21 1 3 0;
 #X connect 21 2 8 0;
+#X connect 22 0 4 0;
+#X connect 22 1 4 1;
 #X coords 0 -1 1 1 80 48 2 100 100;
