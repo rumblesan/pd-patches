@@ -1,0 +1,19 @@
+#N canvas 1102 400 839 703 12;
+#X text 98 58 8 Step Chance Sequencer;
+#X obj 528 434 8step-chance-seq;
+#A saved 8 72.7273 35.3535 67.6768 19.1919 70.7071 19.1919 100 29.2929
+;
+#X obj 528 404 metro 500;
+#X obj 528 345 loadbang;
+#X obj 521 631 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 528 375 1;
+#X text 94 133 Each bang in advances the step sequencer \, with the
+chance of a bang out being dependent on the slider value at that step.
+The number of steps can be changed from 1 to 8 A bang to the right
+inlet resets to the first step on the next bang input. The abstraction
+saves it's own state.;
+#X connect 1 0 4 0;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 5 0 2 0;
