@@ -1,12 +1,12 @@
 #N canvas 1193 395 1035 809 12;
-#X obj 106 102 hsl 150 20 0 150 0 0 \$0-ks-resonance-s \$0-ks-resonance-r
-resonance -65 10 0 10 -262144 -1 -1 13400 1;
-#X obj 106 125 hsl 150 20 200 5000 1 0 \$0-ks-damping-s \$0-ks-damping-r
-damping -54 10 0 10 -262144 -1 -1 14200 1;
+#X obj 106 102 hsl 150 20 0 1 0 0 \$0-ks-resonance-s \$0-ks-resonance-r
+resonance -65 10 0 10 -262144 -1 -1 8300 1;
+#X obj 106 125 hsl 150 20 7000 200 0 0 \$0-ks-damping-s \$0-ks-damping-r
+damping -54 10 0 10 -262144 -1 -1 700 1;
 #X obj 106 148 hsl 150 20 200 5000 1 0 \$0-ks-colour-s \$0-ks-colour-r
-colour -46 10 0 10 -262144 -1 -1 5100 1;
+colour -46 10 0 10 -262144 -1 -1 5600 1;
 #X obj 106 171 hsl 150 20 10 500 1 0 \$0-ks-contour-s \$0-ks-contour-r
-contour -50 10 0 10 -262144 -1 -1 1900 1;
+contour -50 10 0 10 -262144 -1 -1 4000 1;
 #X obj 103 193 hradio 26 1 0 4 \$0-ks-voices-s \$0-ks-voices-r voices
 -43 10 0 10 -262144 -1 -1 3;
 #X obj 132 343 i;
@@ -51,7 +51,7 @@ contour -50 10 0 10 -262144 -1 -1 1900 1;
 #X obj 811 144 r \$0-ks-colour-s;
 #X obj 746 71 f;
 #X obj 746 240 savestate;
-#X obj 746 47 r \$0-ks-voices-s;
+#X obj 764 47 r \$0-ks-voices-s;
 #X obj 844 312 s \$0-ks-contour-r;
 #X obj 819 336 s \$0-ks-colour-r;
 #X obj 795 360 s \$0-ks-damping-r;
@@ -61,7 +61,7 @@ contour -50 10 0 10 -262144 -1 -1 1900 1;
 -1 -1;
 #X obj 144 511 s \$0-ks-voice1;
 #X obj 106 79 hsl 150 20 0 1 0 0 \$0-ks-volume-s \$0-ks-volume-r volume
--45 10 0 10 -262144 -1 -1 2900 1;
+-45 10 0 10 -262144 -1 -1 2200 1;
 #X obj 246 193 bng 12 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 232 207 bng 12 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -126,7 +126,7 @@ contour -50 10 0 10 -262144 -1 -1 1900 1;
 #X connect 45 0 64 0;
 #X connect 46 0 65 0;
 #X connect 46 1 45 0;
-#X connect 47 0 45 0;
+#X connect 47 0 45 1;
 #X connect 59 0 62 1;
 #X connect 60 0 61 0;
 #X connect 61 0 59 0;
