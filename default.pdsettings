@@ -1,25 +1,37 @@
 audioapi: 4
 noaudioin: False
-audioindev1: 0 2
-audioindevname1: Built-in Microphone
+audioindev1: 1 2
+audioindevname1: 828ES
 noaudioout: False
 audiooutdev1: 2 2
-audiooutdevname1: Scarlett 6i6 USB
+audiooutdevname1: 828ES
 audiobuf: 5
 rate: 44100
 callback: 0
 blocksize: 64
 midiapi: 0
-nomidiin: True
+nomidiin: False
+midiindev1: 2
+midiindevname1: mioXM MonoMachine
+midiindev2: 3
+midiindevname2: mioXM MachineDrum
+midiindev3: 5
+midiindevname3: mioXM XBoard
 nomidiout: False
 midioutdev1: 2
-midioutdevname1: mioXM Monomachine
+midioutdevname1: mioXM MonoMachine
+midioutdev2: 3
+midioutdevname2: mioXM MachineDrum
+midioutdev3: 4
+midioutdevname3: mioXM Modular
+midioutdev4: 6
+midioutdevname4: mioXM Monologue
 path1: /Users/guy/src/pd-patches/abstractions
 path2: /Users/guy/src/pd-patches/rjlib/rj
 path3: /Users/guy/src/pd-patches/rjlib/pd
 path4: /Users/guy/src/pd-patches/externals
 npath: 4
-standardpath: 0
+standardpath: 1
 verbose: 0
 nloadlib: 0
 defeatrt: 0
