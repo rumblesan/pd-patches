@@ -1,0 +1,25 @@
+#N canvas 907 273 682 464 12;
+#X obj 102 323 print 1;
+#X floatatom 243 196 5 0 0 0 - - -;
+#X obj 171 319 print 2;
+#X obj 241 321 print 3;
+#X obj 312 320 print 4;
+#X obj 379 321 print 5;
+#X obj 445 322 print 6;
+#X msg 305 208 3 3 5 6;
+#X obj 192 196 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 250 257 message-shifter;
+#X text 140 42 Takes messages at its inlet and then sends them out
+each outlet in turn as new messages arrive \, in a shift-register style
+fashion. bang messages will result in the shift still happening \,
+but no bang will be sent out;
+#X connect 1 0 9 0;
+#X connect 7 0 9 0;
+#X connect 8 0 9 0;
+#X connect 9 0 0 0;
+#X connect 9 1 2 0;
+#X connect 9 2 3 0;
+#X connect 9 3 4 0;
+#X connect 9 4 5 0;
+#X connect 9 5 6 0;
