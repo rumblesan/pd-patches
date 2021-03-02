@@ -1,19 +1,19 @@
-#N canvas 764 203 822 922 12;
+#N canvas 497 331 822 922 12;
 #X obj 43 513 inlet;
 #X obj 43 561 outlet;
-#X floatatom 254 202 5 1 20 0 repeats #0-repeats-r #0-repeats-s;
-#X obj 302 202 bng 20 250 50 0 \$0-output-trig-s \$0-output-trig-r
+#X floatatom 256 204 5 1 20 0 repeats #0-repeats-r #0-repeats-s;
+#X obj 304 204 bng 20 250 50 0 \$0-output-trig-s \$0-output-trig-r
 empty 17 7 0 10 -262144 -1 -1;
 #X obj 43 537 ratchet, f 21;
 #X obj 618 64 inlet;
 #X obj 618 88 dispatch \$0 chance;
 #X obj 618 112 dispatch \$0 repeats;
 #X obj 618 136 dispatch \$0 interval;
-#X obj 205 236 hsl 115 25 0 1 0 0 \$0-chance-s \$0-chance-r chance
--2 -8 0 12 -262144 -1 -1 0 1;
-#X obj 205 286 hsl 115 25 1 3000 1 0 \$0-interval-slider-s \$0-interval-slider-r
-interval -2 -8 0 12 -262144 -1 -1 0 1;
-#X floatatom 285 266 5 0 0 0 - #0-interval-num-r #0-interval-num-s
+#X obj 207 238 hsl 115 25 0 1 0 0 \$0-chance-s \$0-chance-r chance
+-2 -8 0 12 -262144 -1 -1 3500 1;
+#X obj 207 288 hsl 115 25 1 3000 1 0 \$0-interval-slider-s \$0-interval-slider-r
+interval -2 -8 0 12 -262144 -1 -1 7862 1;
+#X floatatom 287 268 5 0 0 0 - #0-interval-num-r #0-interval-num-s
 ;
 #X msg 260 64 set \$1;
 #X msg 423 64 set \$1;
@@ -40,10 +40,10 @@ interval -2 -8 0 12 -262144 -1 -1 0 1;
 #X obj 368 568 s \$0-chance-r;
 #X obj 102 562 s \$0-output-trig-r;
 #X obj 91 465 r \$0-chance-s;
-#X obj 139 489 r \$0-repeats-s;
 #X obj 435 424 r \$0-interval-val;
 #X obj 449 520 s \$0-interval-slider-r;
-#X obj 187 513 r \$0-interval-val;
+#X obj 139 489 r \$0-interval-val;
+#X obj 187 513 r \$0-repeats-s;
 #X connect 0 0 4 0;
 #X connect 4 0 1 0;
 #X connect 4 0 35 0;
@@ -67,9 +67,9 @@ interval -2 -8 0 12 -262144 -1 -1 0 1;
 #X connect 31 1 27 0;
 #X connect 32 0 34 0;
 #X connect 32 1 33 0;
-#X connect 32 2 39 0;
+#X connect 32 2 38 0;
 #X connect 36 0 4 1;
-#X connect 37 0 4 2;
-#X connect 38 0 29 2;
+#X connect 37 0 29 2;
+#X connect 39 0 4 2;
 #X connect 40 0 4 3;
-#X coords 0 -1 1 1 124 113 2 200 200;
+#X coords 0 -1 1 1 128 117 2 200 200;
