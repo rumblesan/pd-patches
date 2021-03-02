@@ -1,0 +1,32 @@
+#N canvas 901 405 627 471 12;
+#X floatatom 133 129 0 0 0 0 CPU% #0-cpu-r #0-cpu-s;
+#X obj 156 307 cputime;
+#X obj 156 235 loadbang;
+#X obj 156 259 metro 1000;
+#X obj 156 283 t b b;
+#X obj 156 355 * 0.1;
+#X obj 156 331 int;
+#X msg 337 95 \; pd dsp \$1 \;;
+#X obj 133 102 tgl 25 0 \$0-dsp-enable-s \$0-dsp-enable-r DSP -28 13
+0 13 -262144 -1 -1 0 1;
+#X obj 337 71 r \$0-dsp-enable-s;
+#X obj 156 379 s \$0-cpu-r;
+#X obj 408 194 r \$0-dsp-enable-s;
+#X obj 390 218 f;
+#X obj 390 242 savestate;
+#X obj 390 266 s \$0-dsp-enable-r;
+#X text 96 30 A simple thing for automatically enabling/disabling DSP
+and showing CPU usage;
+#X connect 1 0 6 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 4 1 1 1;
+#X connect 5 0 10 0;
+#X connect 6 0 5 0;
+#X connect 9 0 7 0;
+#X connect 11 0 12 1;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 13 1 12 0;
+#X coords 0 -1 1 1 60 50 2 100 100;
