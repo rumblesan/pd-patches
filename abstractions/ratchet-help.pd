@@ -1,0 +1,25 @@
+#N canvas 194 357 681 559 12;
+#X obj 378 279 ratchet-ui;
+#A saved 0 0 1;
+#X obj 71 338 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 128 333 5 0 0 0 - - -;
+#X obj 128 356 / 10;
+#X obj 71 380 ratchet 0.25 150 4, f 25;
+#X floatatom 185 357 5 0 0 0 - - -;
+#X floatatom 243 357 5 0 0 0 - - -;
+#X obj 71 420 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 83 54 ratchet allows generation of repeats or ratchets with
+control over the chance of occurance \, the millisecond interval between
+repeats \, and the number of repeats. Each parameter can be specified
+with abstraction creation arguments \, or with the three inlets The
+UI works the same \, except there is only a single right hand inlet
+and control messages must be a list with the name of the parameter
+followed by the value.;
+#X connect 1 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 1;
+#X connect 4 0 7 0;
+#X connect 5 0 4 2;
+#X connect 6 0 4 3;
