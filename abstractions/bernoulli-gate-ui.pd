@@ -1,0 +1,32 @@
+#N canvas 545 441 596 446 12;
+#X obj 109 160 inlet;
+#X obj 252 78 bng 10 250 50 0 \$0-left-bang-s \$0-left-bang-r empty
+17 7 0 10 -262144 -1 -1;
+#X obj 298 78 bng 10 250 50 0 \$0-right-bang-s \$0-right-bang-r empty
+17 7 0 10 -262144 -1 -1;
+#X obj 396 39 inlet;
+#X obj 255 52 hsl 51 24 0 1 0 0 \$0-chance-s \$0-chance-r empty -2
+-8 0 10 -262144 -1 -1 0 1;
+#X obj 452 231 f;
+#X obj 452 255 savestate;
+#X obj 452 279 s \$0-chance-r;
+#X obj 396 63 s \$0-chance-r;
+#X obj 204 160 r \$0-chance-s;
+#X obj 470 207 r \$0-chance-s;
+#X obj 109 184 bernoulli-gate;
+#X obj 65 240 s \$0-left-bang-r;
+#X obj 186 240 s \$0-right-bang-r;
+#X obj 109 208 outlet;
+#X obj 204 208 outlet;
+#X connect 0 0 11 0;
+#X connect 3 0 8 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 1 5 0;
+#X connect 9 0 11 1;
+#X connect 10 0 5 1;
+#X connect 11 0 12 0;
+#X connect 11 0 14 0;
+#X connect 11 1 13 0;
+#X connect 11 1 15 0;
+#X coords 0 -1 1 1 60 40 2 250 50;
