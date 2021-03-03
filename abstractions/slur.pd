@@ -1,0 +1,33 @@
+#N canvas 1214 461 700 554 12;
+#X obj 61 217 inlet~;
+#X obj 87 249 delwrite~ \$0-delay 4000;
+#X obj 95 447 outlet~;
+#X obj 90 370 c_cpfade;
+#X obj 175 329 r \$0-wetdry-s;
+#X obj 160 102 hsl 128 25 10 3000 1 0 \$0-position-s \$0-position-r
+position -55 12 0 10 -262144 -1 -1 0 1;
+#X obj 160 132 hsl 128 25 0.1 10 0 0 \$0-speed-s \$0-speed-r speed
+-45 12 0 10 -262144 -1 -1 0 1;
+#X obj 160 162 hsl 128 25 0 1 0 0 \$0-wetdry-s \$0-wetdry-r wet/dry
+-55 12 0 10 -262144 -1 -1 12700 1;
+#X obj 381 304 line~;
+#X msg 446 226 0;
+#X obj 357 186 t b b;
+#X obj 378 378 delread4~ \$0-delay;
+#X obj 459 139 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 351 130 inlet;
+#X msg 377 264 1000 4000;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 2;
+#X connect 8 0 11 0;
+#X connect 9 0 8 0;
+#X connect 10 0 14 0;
+#X connect 10 1 9 0;
+#X connect 11 0 3 1;
+#X connect 12 0 10 0;
+#X connect 13 0 10 0;
+#X connect 14 0 8 0;
+#X coords 0 -1 1 1 192 90 2 100 100;
