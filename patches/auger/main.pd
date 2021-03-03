@@ -70,7 +70,7 @@
 #A saved 1 0 0 1 0 1 0 0 1 0 0 0 1 0;
 #X obj 1453 808 simple-fm-synth;
 #X obj 1017 872 simple-volume;
-#A saved 1.51991 1;
+#A saved 1.38489 1;
 #X obj 1017 842 r~ mixer4;
 #X obj 1453 1000 s~ mixer4;
 #X obj 583 32 dsp-control;
@@ -97,7 +97,7 @@
 #A saved 80 3;
 #X obj 701 296 r control;
 #X obj 1453 784 pack f f;
-#X obj 1453 760 makenote 80 150;
+#X obj 1453 760 makenote 80 250;
 #X connect 0 0 18 0;
 #X connect 1 0 8 0;
 #X connect 2 0 15 0;
