@@ -2,7 +2,7 @@
 #X obj 43 513 inlet;
 #X obj 43 561 outlet;
 #X floatatom 256 204 5 1 20 0 repeats #0-repeats-r #0-repeats-s;
-#X obj 304 204 bng 20 250 50 0 \$0-output-trig-s \$0-output-trig-r
+#X obj 308 316 bng 15 250 50 0 \$0-output-trig-s \$0-output-trig-r
 empty 17 7 0 10 -262144 -1 -1;
 #X obj 43 537 ratchet, f 21;
 #X obj 618 64 inlet;
@@ -12,7 +12,7 @@ empty 17 7 0 10 -262144 -1 -1;
 #X obj 207 238 hsl 115 25 0 1 0 0 \$0-chance-s \$0-chance-r chance
 -2 -8 0 12 -262144 -1 -1 3500 1;
 #X obj 207 288 hsl 115 25 1 3000 1 0 \$0-interval-slider-s \$0-interval-slider-r
-interval -2 -8 0 12 -262144 -1 -1 7862 1;
+interval -2 -8 0 12 -262144 -1 -1 7452 1;
 #X floatatom 287 268 5 0 0 0 - #0-interval-num-r #0-interval-num-s
 ;
 #X msg 260 64 set \$1;
@@ -38,15 +38,21 @@ interval -2 -8 0 12 -262144 -1 -1 7862 1;
 #X obj 368 496 unpack f f f;
 #X obj 408 544 s \$0-repeats-r;
 #X obj 368 568 s \$0-chance-r;
-#X obj 102 562 s \$0-output-trig-r;
+#X obj 208 641 s \$0-output-trig-r;
 #X obj 91 465 r \$0-chance-s;
 #X obj 435 424 r \$0-interval-val;
 #X obj 449 520 s \$0-interval-slider-r;
 #X obj 139 489 r \$0-interval-val;
 #X obj 187 513 r \$0-repeats-s;
+#X obj 187 561 outlet;
+#X obj 205 316 bng 15 250 50 0 \$0-output-main-s \$0-output-main-r
+empty 17 7 0 10 -262144 -1 -1;
+#X obj 53 626 s \$0-output-main-r;
 #X connect 0 0 4 0;
 #X connect 4 0 1 0;
-#X connect 4 0 35 0;
+#X connect 4 0 43 0;
+#X connect 4 1 35 0;
+#X connect 4 1 41 0;
 #X connect 5 0 6 0;
 #X connect 6 0 7 0;
 #X connect 7 0 8 0;
@@ -72,4 +78,4 @@ interval -2 -8 0 12 -262144 -1 -1 7862 1;
 #X connect 37 0 29 2;
 #X connect 39 0 4 2;
 #X connect 40 0 4 3;
-#X coords 0 -1 1 1 128 117 2 200 200;
+#X coords 0 -1 1 1 128 135 2 200 200;

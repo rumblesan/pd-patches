@@ -10,7 +10,7 @@
 #X msg 109 235 1;
 #X obj 162 235 r \$0-interval;
 #X obj 109 403 sel 1 0;
-#X obj 86 427 outlet;
+#X obj 86 451 outlet;
 #X obj 86 91 / 100;
 #X obj 86 187 sel 0 1;
 #X obj 86 163 < \$1;
@@ -25,6 +25,7 @@
 #X obj 580 35 inlet;
 #X obj 580 59 s \$0-repeats;
 #X obj 109 379 < \$3;
+#X obj 109 427 outlet;
 #X connect 0 0 1 0;
 #X connect 1 0 12 0;
 #X connect 2 0 3 1;
@@ -38,7 +39,7 @@
 #X connect 7 0 16 0;
 #X connect 8 0 15 0;
 #X connect 9 0 15 1;
-#X connect 10 0 11 0;
+#X connect 10 0 26 0;
 #X connect 10 1 5 0;
 #X connect 12 0 14 0;
 #X connect 13 0 11 0;
