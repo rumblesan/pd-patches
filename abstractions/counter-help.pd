@@ -1,0 +1,28 @@
+#N canvas 571 539 844 573 12;
+#X obj 140 260 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 118 412 5 0 0 0 - - -;
+#X text 18 15 A simple counter;
+#X text 18 40 With no arguments it will just keep going;
+#X text 15 82 Second argument sets the amount to increment each time
+;
+#X text 28 127 Bang at first inlet increments;
+#X text 28 142 Number at first inlet sets output value immediately
+;
+#X text 30 162 Second inlet sets maximum value;
+#X text 30 187 Bang at third inlet resets on next increment;
+#X obj 468 248 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 446 400 5 0 0 0 - - -;
+#X obj 494 306 counter 10 2;
+#X obj 521 348 print incr-2;
+#X obj 166 318 counter 6;
+#X text 17 54 First argument sets upper threshold before resetting.
+Maximum value output will be 1 less than this.;
+#X obj 193 360 print max-6;
+#X connect 0 0 13 0;
+#X connect 9 0 11 0;
+#X connect 11 0 10 0;
+#X connect 11 0 12 0;
+#X connect 13 0 1 0;
+#X connect 13 0 15 0;

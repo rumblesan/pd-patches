@@ -1,4 +1,4 @@
-#N canvas 1722 360 729 433 12;
+#N canvas 1490 506 729 433 12;
 #X obj 101 101 inlet;
 #X obj 141 171 i 0;
 #X obj 174 171 + 1;
@@ -12,10 +12,10 @@
 #X obj 192 63 i \$2;
 #X obj 395 78 t b;
 #X obj 293 61 inlet;
-#X obj 376 167 loadbang;
+#X obj 373 122 loadbang;
 #X obj 321 372 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 355 192 i \$1;
+#X obj 352 147 i \$1;
 #X floatatom 166 225 5 0 0 0 - - -;
 #X floatatom 262 295 5 0 0 0 - - -;
 #X floatatom 231 178 5 0 0 0 - - -;
