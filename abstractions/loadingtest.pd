@@ -1,0 +1,6 @@
+#N canvas 839 647 762 531 12;
+#X obj 286 236 print loadtest;
+#X obj 313 133 loadbang;
+#X obj 286 212 list prepend \$1;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;

@@ -5,27 +5,27 @@
 #X floatatom 748 157 5 0 0 0 freq #0-op2-freq-mod-r #0-op2-freq-mod-s
 ;
 #X obj 504 191 vsl 25 128 1 3000 1 0 \$0-op1-attack-s \$0-op1-attack-r
-atk 0 -9 0 10 -262144 -1 -1 0 1;
+atk 0 -9 0 10 -262144 -1 -1 4900 1;
 #X obj 532 191 vsl 25 128 1 3000 1 0 \$0-op1-decay-s \$0-op1-decay-r
-dcy 0 -9 0 10 -262144 -1 -1 0 1;
+dcy 0 -9 0 10 -262144 -1 -1 7100 1;
 #X obj 560 191 vsl 25 128 1 100 0 0 \$0-op1-sustain-s \$0-op1-sustain-r
-sus 0 -9 0 10 -262144 -1 -1 0 1;
+sus 0 -9 0 10 -262144 -1 -1 9900 1;
 #X obj 588 191 vsl 25 128 1 3000 1 0 \$0-op1-release-s \$0-op1-release-r
-rel 0 -9 0 10 -262144 -1 -1 0 1;
+rel 0 -9 0 10 -262144 -1 -1 10500 1;
 #X obj 676 191 vsl 25 128 1 3000 1 0 \$0-op2-attack-s \$0-op2-attack-r
-atk 0 -9 0 10 -262144 -1 -1 0 1;
+atk 0 -9 0 10 -262144 -1 -1 3300 1;
 #X obj 704 191 vsl 25 128 1 3000 1 0 \$0-op2-decay-s \$0-op2-decay-r
-dcy 0 -9 0 10 -262144 -1 -1 0 1;
+dcy 0 -9 0 10 -262144 -1 -1 4900 1;
 #X obj 732 191 vsl 25 128 1 100 0 0 \$0-op2-sustain-s \$0-op2-sustain-r
-sus 0 -9 0 10 -262144 -1 -1 0 1;
+sus 0 -9 0 10 -262144 -1 -1 8200 1;
 #X obj 760 191 vsl 25 128 1 3000 1 0 \$0-op2-release-s \$0-op2-release-r
-rel 0 -9 0 10 -262144 -1 -1 0 1;
+rel 0 -9 0 10 -262144 -1 -1 10600 1;
 #X text 502 155 op1;
 #X text 673 155 op2;
 #X obj 618 269 vsl 25 50 0.2 20 1 0 \$0-vibrato-freq-s \$0-vibrato-freq-r
-freq 0 -9 0 10 -262144 -1 -1 0 1;
+freq 0 -9 0 10 -262144 -1 -1 1700 1;
 #X obj 646 269 vsl 25 50 0.03 3 1 0 \$0-vibrato-depth-s \$0-vibrato-depth-r
-dpth 0 -9 0 10 -262144 -1 -1 0 1;
+dpth 0 -9 0 10 -262144 -1 -1 1900 1;
 #X text 617 232 vibrato;
 #X obj 1002 639 unpack f f f f f f f f f f f, f 54;
 #X obj 1003 735 s \$0-op1-attack-r;
@@ -94,7 +94,6 @@ dpth 0 -9 0 10 -262144 -1 -1 0 1;
 #X obj 952 446 pipe 10;
 #X obj 1002 591 savestate;
 #X obj 1002 615 list prepend;
-#X obj 901 794 print fm settings;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
 #X connect 17 0 18 0;
@@ -158,7 +157,6 @@ dpth 0 -9 0 10 -262144 -1 -1 0 1;
 #X connect 79 0 80 0;
 #X connect 80 0 82 0;
 #X connect 81 0 82 1;
-#X connect 81 0 83 0;
 #X connect 81 1 38 0;
 #X connect 82 0 17 0;
 #X coords 0 -1 1 1 289 187 1 500 140;
