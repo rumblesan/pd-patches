@@ -1,0 +1,25 @@
+#N canvas 20 132 601 463 12;
+#X obj 175 266 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 176 341 print;
+#X msg 241 281 loop \$1;
+#X obj 245 240 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 309 244 length 4;
+#X msg 326 288 reset;
+#X obj 165 308 chaos-loops;
+#X text 72 32 Generate random numbers between 0 and 1 with the possibility
+of looping them;
+#X text 72 70 Bang at input gets next number;
+#X text 74 92 loop message to right hand inlet turns looping on or
+off;
+#X text 71 115 length message sets length of loop \, up to max of 32
+;
+#X text 76 141 reset message resets back to beginning of loop if it's
+enabled;
+#X connect 0 0 6 0;
+#X connect 2 0 6 1;
+#X connect 3 0 2 0;
+#X connect 4 0 6 1;
+#X connect 5 0 6 1;
+#X connect 6 0 1 0;
