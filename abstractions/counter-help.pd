@@ -1,28 +1,43 @@
-#N canvas 571 539 844 573 12;
-#X obj 140 260 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#N canvas 667 371 844 573 12;
+#X obj 143 303 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 118 412 5 0 0 0 - - -;
+#X floatatom 121 455 5 0 0 0 - - -;
 #X text 18 15 A simple counter;
-#X text 18 40 With no arguments it will just keep going;
-#X text 15 82 Second argument sets the amount to increment each time
+#X text 18 33 With no arguments it will just keep going;
+#X text 18 83 Second argument sets the amount to increment each time
 ;
-#X text 28 127 Bang at first inlet increments;
-#X text 28 142 Number at first inlet sets output value immediately
+#X text 18 103 Bang at first inlet increments;
+#X text 19 119 Number at first inlet sets output value immediately
 ;
-#X text 30 162 Second inlet sets maximum value;
-#X text 30 187 Bang at third inlet resets on next increment;
-#X obj 468 248 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X text 17 146 Second inlet sets maximum value;
+#X text 17 170 Bang at third inlet resets on next increment;
+#X obj 373 286 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 446 400 5 0 0 0 - - -;
-#X obj 494 306 counter 10 2;
-#X obj 521 348 print incr-2;
-#X obj 166 318 counter 6;
-#X text 17 54 First argument sets upper threshold before resetting.
+#X floatatom 351 438 5 0 0 0 - - -;
+#X obj 399 344 counter 10 2;
+#X obj 426 386 print incr-2;
+#X obj 169 361 counter 6;
+#X text 18 51 First argument sets upper threshold before resetting.
 Maximum value output will be 1 less than this.;
-#X obj 193 360 print max-6;
+#X obj 196 403 print max-6;
+#X obj 596 169 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 574 321 5 0 0 0 - - -;
+#X obj 622 227 counter 10;
+#X obj 649 269 print setvalue;
+#X msg 640 155 set \$1;
+#X floatatom 638 120 5 0 0 0 - - -;
+#X text 17 194 Number at third inlet sets on next increment;
+#X text 17 218 Right outlet bangs on reset \, or on setting number
+to 0;
 #X connect 0 0 13 0;
 #X connect 9 0 11 0;
 #X connect 11 0 10 0;
 #X connect 11 0 12 0;
 #X connect 13 0 1 0;
 #X connect 13 0 15 0;
+#X connect 16 0 18 0;
+#X connect 18 0 17 0;
+#X connect 18 0 19 0;
+#X connect 20 0 18 0;
+#X connect 21 0 20 0;
