@@ -1,0 +1,8 @@
+#N canvas 139 96 1127 1025 12;
+#X obj 354 171 turing-machine;
+#A saved 0 0 0;
+#X obj 383 412 quantiser;
+#A saved 0 0 0 0 0 0 0 0 0 0 0 0 1 0;
+#X obj 838 398 wavetable-osc;
+#X obj 586 651 clock;
+#A saved 120 1 0.5;

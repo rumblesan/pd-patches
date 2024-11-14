@@ -1,5 +1,5 @@
-#N canvas 49 235 847 936 12;
-#N canvas 361 264 959 709 fft-analysis 1;
+#N canvas 49 25 847 847 12;
+#N canvas 361 163 959 709 fft-analysis 1;
 #X obj 56 486 *~;
 #X obj 23 486 *~;
 #X obj 23 508 -~;
@@ -29,12 +29,12 @@
 #X obj 127 655 expr 2/(3*$f1);
 #X msg 370 627 set \$1 4;
 #X obj 98 440 q8_rsqrt~;
-#N canvas 156 417 1029 827 read-windows 1;
+#N canvas 156 45 1029 827 read-windows 1;
 #X obj 146 667 *~;
 #X obj 276 282 f;
 #X obj 200 99 /;
 #X obj 325 669 *~;
-#X obj 276 231 bang~;
+#X obj 276 212 bang~;
 #X obj 146 531 line~;
 #X obj 200 124 * 1000;
 #X obj 318 284 +;
@@ -273,7 +273,7 @@ shifts the signal to the left or right depending on its argument.)
 #X coords 0 500 4096 -500 400 300 1 0 0;
 #X restore 37 37 graph;
 #X restore 80 753 pd prev-windows;
-#N canvas 910 220 577 494 window-funcs 0;
+#N canvas 863 220 577 494 window-funcs 0;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array \$0-hann 2048 float 0;
 #X coords 0 1 2047 0 300 100 1;

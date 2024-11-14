@@ -1,0 +1,5 @@
+#N canvas 999 447 820 575 12;
+#X obj 226 222 r \$0-test;
+#X obj 226 246 print dispatchtest;
+#X obj 502 99 dispatch \$0 test 0.1 \$1;
+#X connect 0 0 1 0;

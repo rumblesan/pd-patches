@@ -1,0 +1,23 @@
+background(0)
+noFill()
+
+strokeSize(2)
+add = ext(:add, 0)
+
+i = ext(:mloop, 1)
+
+g = ext(:glitch, 0)
+
+if (g > 0.5)
+	rotate(3)
+		stroke(0, 200, 150, 100)
+			strokeSize(20)
+				sphere(8)
+	fill(100, 200, 250, 70)
+
+rotate(g * 2)
+
+loop i times
+	rotate(time/10)
+	stroke(255)
+		cube(3 + add)

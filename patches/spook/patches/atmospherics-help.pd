@@ -1,0 +1,5 @@
+#N canvas 242 224 450 300 12;
+#X obj 117 49 atmospherics;
+#X obj 117 73 dac~;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;

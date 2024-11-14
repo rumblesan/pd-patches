@@ -1,0 +1,5 @@
+#N canvas 719 182 450 300 12;
+#X obj 132 192 r \$0-bpm;
+#X obj 132 216 print dispatch-test;
+#X obj 144 86 dispatch \$0 bpm 120;
+#X connect 0 0 1 0;

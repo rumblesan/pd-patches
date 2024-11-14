@@ -1,0 +1,20 @@
+#N canvas 1651 274 765 650 12;
+#X obj 294 326 scope;
+#X obj 274 186 ad-env 1000 1000;
+#X obj 231 105 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 366 107 attack 10;
+#X msg 451 120 decay 10;
+#X msg 263 98 500;
+#X text 421 194 arg 1 attack;
+#X text 422 212 arg 2 decay;
+#X text 423 232 arg 3 default sustain time;
+#X text 205 46 bang uses default time;
+#X text 204 63 number sets sutain time for that envelope;
+#X msg 544 123 time 250;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 1;
+#X connect 4 0 1 1;
+#X connect 5 0 1 0;
+#X connect 11 0 1 1;
